@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Book Store" />
+</head>
+
+<body>
+    <dir>
+        <h1>Book Store</h1>
+        <p>This Is A Book Storeg, Welcome</p>
+    </dir>
+    <!--
+        in form readonly for read we cant change it but we can send the information
+        diable we cant change it and the information will not send 
+        autofocus => The mouse pointer will be at the specified with autofocus
+        novalidate => no need to fill the fields
+        target => (_blank)send the information and keep the page we fill and open a new page 
+        -->
+    <form action="" method="GET" >
+        <input type="hidden" value="YARA">
+        <div>
+            <label for="name">Username</label>
+            <input id="name" type="text" required placeholder="Username" name="username" autofocus>
+        </div>
+        <br/>
+        <div>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" required placeholder="Valid Email" value="yz@outlook.com" name="mail" disabled>
+        </div>
+        <br/>
+        <div>
+            <label for="pass">Password </label>
+            <input id="pass" type="password" required placeholder="Password" name="password" minlength="8" maxlength="20">
+        </div>
+        <br/>
+        <div>
+            <label for="color">Color </label>
+            <input id="color" type="color" name="Color">
+        </div>
+        <br/>
+        <div>
+            <label for="range">Range </label>
+            <input id="range" type="range" name="range" min="0" max="1000" step="5" value="0">
+        </div>
+        <br/>
+        <div>
+            <label for="number">Number </label>
+            <input id="number" type="number" name="Number" step="2">
+        </div>
+        <br/>
+        <hr/>
+        <h3>Select An OS</h3>
+        <div>
+            <input id="windows" type="radio" name="OS" value="Windows" checked>
+            <label for="windows">Windows</label>
+        </div>
+        <br/>
+        <div>
+            <input id="linux" type="radio" name="OS" value="Linux">
+            <label for="linux">Linux</label>
+        </div>
+        <br/>
+        <div>
+            <input id="mac" type="radio" name="OS" value="Mac">
+            <label for="mac">Mac</label>
+        </div>
+        <br/>
+        <hr/>
+        <h3>Select A Language</h3>
+
+        <div>
+            <input id="c1" type="checkbox" name="Language" value="C">
+            <label for="c1">C</label>
+        </div>
+        <br/>
+        <div>
+            <input id="c2" type="checkbox" name="Language" value="C#">
+            <label for="c2">C#</label>
+        </div>
+        <br/>
+        <div>
+            <input id="c3" type="checkbox" name="Language" value="C++">
+            <label for="c3">C++</label>
+        </div>
+        <br/>
+        <div>
+            <input id="c4" type="checkbox" name="Language" value="Java">
+            <label for="c4">Java</label>
+        </div>
+        <br/>
+        <div>
+            <input id="c5" type="checkbox" name="Language" value="Python">
+            <label for="c5">Python</label>
+        </div>
+        <br/>
+        <hr/>
+        <div>
+            <!--
+                optgroup => for catogaries we use it to name it we use label as follow
+                <optgroup label="NAME"></optgroup>
+            -->
+            <label for="book">Choose Book:</label>
+            <select name="book" id="book" multiple>
+                <option value="1">Harry Potter And The Philosopher's Stone</option>
+                <option value="2">Harry Potter And The Chamber Of Secrets</option>
+                <option value="3">Harry Potter And The Prisoner Of Azkaban</option>
+                <option value="4">Harry Potter And The Goblet Of Fire</option>
+                <option value="5" selected>Harry Potter And The Order Of The Phoenix</option>
+                <option value="6">Harry Potter And The Half-Blood Prince</option>
+                <option value="7">Harry Potter And The Deathly Hallows</option>
+            </select>
+        </div>
+        <br/>
+        <hr/>
+        <textarea name="Subjects" id="ta1" cols="30" rows="10" placeholder="Test Text"></textarea>
+        <hr/>
+        <div>
+            <label for="file1">Upload</label>
+            <input type="file" id="file1">
+        </div>
+        <hr/>
+        <div>
+            <label for="sarch1">Search</label>
+            <input type="search" id="sarch1">
+        </div>
+        <hr/>
+        <div>
+            <label for="url1">URL</label>
+            <input type="url" id="url1">
+        </div>
+        <hr/>
+        <div>
+            <label for="date1">Date</label>
+            <input type="date" id="date1">
+        </div>
+        <hr/>
+        <div>
+            <label for="month1">Month</label>
+            <input type="month" id="month1">
+        </div>
+        <hr/>
+        <div>
+            <label for="week1">Week</label>
+            <input type="week" id="week1">
+        </div>
+        <hr/>
+        <div>
+            <label for="time1">Time</label>
+            <input type="time" id="time1">
+        </div>
+        <hr/>
+        <label for="Books">Choose A Book</label>
+        <input  list="Books"name="books">
+        <datalist id="Books">
+            <option value="Harry Potter And The Philosopher's Stone"></option>
+            <option value="Harry Potter And The  Chamber Of Secrets"></option>
+            <option value="Harry Potter And The Prisoner Of Azkaban"></option>
+            <option value="Harry Potter And The Golbet Of Fire"></option>
+            <option value="Harry Potter And The Order Of The Phoenix"></option>
+            <option value="Harry Potter And The Half-Blood Prince"></option>
+            <option value="Harry Potter And The Deathly Hallows"></option>
+        </datalist>
+        <hr/>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Video File</title>
+        <meta name="description" content="This Is Video"/>
+    </head>
+    <body>
+        <dir>
+            <h1>Video File</h1>
+            <p>This Is A Song, Welcome</p>
+        </dir>
+        <!--
+            autoplay => Dose Not Play In Chrome
+            loop => Run Forever
+            muted => No Sound
+            track => File Contain The Transelate (More Than One File) OR Description 
+            امتداده لازم يكون vtt
+        -->
+        <video controls width="900px" height="600px" poster="imgs/static-assets-upload4218191683613552348.gif" autoplay>
+            <source src="media/Past-Life.mp4" type="video/mp4"/>
+            Your Browser Dose Not Support The Video Tages
+            <track src="File_en.vtt" kind="subtitels" srclang="en" label="English">
+        </video>
+    </body>
+</html>
